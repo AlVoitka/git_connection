@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="promo">
+        <div class="container">
+            <h1>container</h1>
+        </div>
+    </section>
+
+</html>
+
+<!-- https://git-scm.com/              еще источник   https://oiplug.com/blog/git/5049/
+1. Скачиваем и устанавливаем Git.
+2.  В папке проекта вызываем командное окно  (Shift + правая кнопка мыши ) и там прописываем путь к данному проекту (или он уже будет прописан автаматически.)
+git init   --- эта команда инициирует начала работы и подключение гита к этому проекту ( папки и файлы должны стать зелными)
+3.git config --local user.name "Alex_V"   по этой команде присваиваю локальное имя Alex_V
+git config --local user.email v.superalex@gmail.com     тут уже без кавычек.
+  
+Когда запускеешь гит первый раз, то лучше указывать не local а global 
+
+git log  команда показывает какие, когда и кем делались коммиты
+
+
+Проверка
+git status    - задаем команду
+результат: 
+No commits yet   - нет ни одного коммита
+Untracked files:  - git не следит за файлами что прописаны ниже. Это первое состояния в гите - файлы просто созданы.
+ (use "git add <file>..." to include in what will be committed)
+        css/
+        index.html     - эти файлы сейчас красного цвета
+        sass
+
+Вот теперь их нужно добавить командой:
+
+git add -A       
+
+Снова проверка : git status
+
+On branch master
+
+No commits yet    - нет ни одного коммита
+
+Changes to be committed:  - git следит за за нижеперечисленными файламию Это второе состояние  в гите -файлы под контролем. После внесения изменений в код команду нужно повтарить ( автоматически новые файлы не добавляются)
+  (use "git rm --cached <file>..." to unstage)
+        new file:   css/style.css
+        new file:   css/style.css.map
+        new file:   css/style.min.css         -но теперь файлы окрашены в зелёный цвет
+        new file:   index.html
+        new file:   sass/style.sass
+
+
+
+
+
+
+
+Для загрузки коммита на github создаем новый репозиторий на гитхабе и как только создадим там буду команды ,
+ выбираю :  
+ git remote add origin https://github.com/AlVoitka/first_add_commit.git   это как раз путь к созданному репазиторию. Теперь лакальный репозиторий связался с удаленным на гитхабе
+ git push -u origin main   - загружает "пушит" на гитхаб коммит
+-->
